@@ -58,7 +58,7 @@ program bucky
 
   open(  unit_dat      , file = trim(baseFile)//'.dat'                , status = 'unknown' , form = 'formatted'   )
   open(  unit_inp      , file = trim( inpFile)//'.inp' ,action='read' , status = 'old'     , form = 'formatted'   )  
-  !open( unit_out      , file = trim(baseFile)//'.out_filename        , status = 'replace' , form = 'formatted'   )
+  !open( unit_out      , file = trim(baseFile)//'.out_filename'       , status = 'replace' , form = 'formatted'   )
   !open( unit_resnew   , file = trim(baseFile)//'.new_restart'        , status = 'replace' , form = 'unformatted' )
 
   write( unit_surtemp  ,  '(a,a18,a)') "# " ,  "Time (s)"  ,  "  Surface Temperature (C)" 
